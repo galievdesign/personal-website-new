@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('../assets/fonts/NeueMachina-Bold.woff2') format('woff2'), url('../assets/fonts/NeueMachina-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('../assets/fonts/NeueMachina-Medium.woff2') format('woff2'), url('../assets/fonts/NeueMachina-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+$primaryFont: 'Neue Machina', Arial, Helvetica, sans-serif;
+$secondFont: 'Inter', Arial, Helvetica, sans-serif;
