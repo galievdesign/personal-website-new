@@ -12,16 +12,16 @@ html {
 }
 
 body {
-  background: $backgroundColor;
+  background-color: $backgroundColor;
   font-size: 16px;
 }
 
 .hero {
-  background-color: $backgroundColor;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   position: sticky;
   top: 0px;
-  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 100);
+  background-color: $backgroundColor;
 }
 
 .container {
@@ -30,10 +30,6 @@ body {
 }
 
 .wrapper {
-  z-index: 0;
-  // display: flex;
-  // flex-direction: row;
-  // justify-content: space-between;
   display: grid;
   grid-template-areas: 
     "header image"
@@ -44,14 +40,6 @@ body {
   column-gap: 40px;
   grid-auto-flow: column;
 }
-
-// .about {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-between;
-  // flex: 1;
-  // width: 50%;
-// }
 
 .title {
   grid-area: header;
@@ -78,14 +66,12 @@ body {
   font-family: $secondFont;
   font-size: 2vw;
   line-height: 1;
-  font-weight: 500;
+  letter-spacing: -0.02em;
 }
 
 .image {
   grid-area: image;
   object-fit: cover;
-  // width: 50%;
-  // max-width: 900px;
   height: 100%;
 }
 
@@ -106,17 +92,11 @@ body {
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr;
     row-gap: 40px;
-    // flex-direction: column;
-  }
 
-  // .about {
-  //   justify-content: flex-start;
-  //   width: 100%;
-  // }
+  }
 
   .title {
     font-size: 48px;
-    // margin-bottom: 20px;
     line-height: 1.2;
   }
 
@@ -126,7 +106,6 @@ body {
 
   .nav__link {
     font-size: 20px;
-    font-weight: 600;
   }
 
   .image {
@@ -141,7 +120,6 @@ body {
 @media screen and (max-width: 599px) {
   .wrapper {
     row-gap: 20px;
-    // flex-direction: column;
   }
 
   .title {
@@ -150,10 +128,6 @@ body {
 
   .nav__item {
     margin-right: 15px;
-  }
-
-  .nav__link {
-    font-size: 16px;
   }
 
   .image {
