@@ -6,6 +6,7 @@
   transition: 0.1s;
   color: $accentColor;
 }
+
 html { 
   scroll-behavior: smooth;
 }
@@ -16,7 +17,6 @@ body {
 }
 
 .hero {
-  height: calc(100 * var(--vh));
   background-color: $backgroundColor;
   position: sticky;
   top: 0px;
@@ -157,6 +157,6 @@ body {
   }
 
   .image {
-    height: 280px;
+    height: 240px;
   }
 }
