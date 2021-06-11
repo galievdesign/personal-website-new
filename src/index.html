@@ -9,13 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./scss/main.scss">
     <script src="./js/script.js"></script>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <section class="hero">
         <div class="container">
-            <div class="wrapper">
-                <h1 class="title">
+            <div class="hero__wrapper">
+                <h1 class="hero__title">
                     Привет! Я&nbsp;Галиев Ранис и&nbsp;я&nbsp;создаю удобные сайты с&nbsp;2016 года
                 </h1>
                 <nav class="nav">
@@ -31,95 +32,117 @@
                         </li>
                     </ul>
                 </nav>
-                <img src="./assets/img/image-me.png" alt="Галиев Ранис. Казань, лето 2021 года." class="image round">
+                <img class="hero__image--round" src="./assets/img/image-me.png"
+                    alt="Галиев Ранис. Казань, лето 2021 года.">
             </div>
         </div>
     </section>
 
     <section class="projects">
         <div class="container">
+            <h2 class="projects__title">
+                Проекты, которые я делал с 2016 по 2021 года
+            </h2>
+
             <!--PROJECTS-->
 
-            <section class="projects">
-                <div class="projects__group">
-                    <h4 class="projects__headline">
-                        2021
-                    </h4>
-                    <ul class="projects__list">
-                        <li class="projects__item">
-                            <a href="#" class="project__link">
-                                <h2 class="project__title">
-                                    Лестничный мастер
-                                </h2>
-                                <p class="project__description">
-                                    Мастерская, которая занимается изготовлением мебели из&nbsp;дерева
-                                </p>
-                            </a>
-                        </li>
-                        <li class="projects__item">
-                            <a href="#" class="project__link">
-                                <h2 class="project__title">
-                                    Лестничный мастер
-                                </h2>
-                                <p class="project__description">
-                                    Мастерская, которая занимается изготовлением мебели из дерева
-                                </p>
-                            </a>
-                        </li>
-                        <li class="projects__item">
-                            <a href="#" class="project__link">
-                                <h2 class="project__title">
-                                    Лестничный мастер
-                                </h2>
-                                <p class="project__description">
-                                    Мастерская, которая занимается изготовлением мебели из дерева
-                                </p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="projects__group">
+                <h3 class="projects__headline">
+                    2021
+                </h3>
+                <ul class="projects__list">
+                    <li class="projects__item">
+                        <a class="projects-item__link" href="https://rem-gel.ru/" target="_blank">
+                            <h2 class="projects-item__title">
+                                Remgel
+                            </h2>
+                            <p class="projects-item__description">
+                                Ремонт квартир под ключ в Сочи и Адлере
+                            </p>
+                        </a>
+                    </li>
+                    <li class="projects__item">
+                        <a class="projects-item__link" href="https://fashion-flowers.tilda.ws/" target="_blank">
+                            <h2 class="projects-item__title">
+                                Fashion Flowers
+                            </h2>
+                            <p class="projects-item__description">
+                                Бутик особенных цветочных композиций в Казани
+                            </p>
+                        </a>
+                    </li>
+                    <li class="projects__item">
+                        <a class="projects-item__link" href="https://papilio-msk.ru/" target="_blank">
+                            <h2 class="projects-item__title">
+                                Papilio
+                            </h2>
+                            <p class="projects-item__description">
+                                Салон свадебных платьев
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-                <!-- OLD PROJECTS -->
+            <!-- OLD PROJECTS -->
 
-                <div class="projects__group">
-                    <h4 class="projects__headline">
-                        2016-2020
-                    </h4>
-                    <ul class="projects__list">
-                        <li class="projects__item">
-                            <a href="#" class="project__link">
-                                <h2 class="project__title">
-                                    Лестничный мастер
-                                </h2>
-                                <p class="project__description">
-                                    Мастерская, которая занимается изготовлением мебели из дерева
-                                </p>
-                            </a>
-                        </li>
-                        <li class="projects__item">
-                            <a href="#" class="project__link">
-                                <h2 class="project__title">
-                                    Лестничный мастер
-                                </h2>
-                                <p class="project__description">
-                                    Мастерская, которая занимается изготовлением мебели из дерева
-                                </p>
-                            </a>
-                        </li>
-                        <li class="projects__item">
-                            <a href="#" class="project__link">
-                                <h2 class="project__title">
-                                    Лестничный мастер
-                                </h2>
-                                <p class="project__description">
-                                    Мастерская, которая занимается изготовлением мебели из дерева
-                                </p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
+            <div class="projects__group">
+                <h4 class="projects__headline">
+                    2016-2020
+                </h4>
+                <ul class="projects__list">
+                    <li class="projects__item">
+                        <a class="projects-item__link" href="https://www.fckamaz.ru/" target="_blank">
+                            <h2 class="projects-item__title">
+                                ФК Камаз
+                            </h2>
+                            <p class="projects-item__description">
+                                Профессиональный футбольный клуб из Набережных Челнов
+                            </p>
+                        </a>
+                    </li>
+                    <li class="projects__item">
+                        <a class="projects-item__link" href="https://znaemigraem.ru/" target="_blank">
+                            <h2 class="projects-item__title">
+                                Знаем Играем
+                            </h2>
+                            <p class="projects-item__description">
+                                Интернте-магазин настольных игр, игрушек и комиксов
+                            </p>
+                        </a>
+                    </li>
+                    <li class="projects__item">
+                        <a class="projects-item__link" href="https://adepta.group/" target="_blank">
+                            <h2 class="projects-item__title">
+                                Adepta
+                            </h2>
+                            <p class="projects-item__description">
+                                Школа-студия с обучением маникюру и визажу
+                            </p>
+                        </a>
+                    </li>
+                    <li class="projects__item">
+                        <a class="projects-item__link" href="https://apriorius.ru/" target="_blank">
+                            <h2 class="projects-item__title">
+                                Априори
+                            </h2>
+                            <p class="projects-item__description">
+                                Юридическая служба
+                            </p>
+                        </a>
+                    </li>
+                    <li class="projects__item">
+                        <a class="projects-item__link" href="https://sa-rt.ru/" target="_blank">
+                            <h2 class="projects-item__title">
+                                Союз архитекторов РТ
+                            </h2>
+                            <p class="projects-item__description">
+                                Творческое объединение профессионалов в области архитектуры, градостроительства, охраны культурного наследия и изучения архитектуры
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -127,36 +150,43 @@
 
     <footer class="footer">
         <div class="container">
-            <h2>
-                Открыт к любым предложениям
-            </h2>
-            <ul>
-                <li>
-                    <a href="#">
-                        89874038030
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        galievdesign@gmail.com
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Telegram
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        IG
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        VK
-                    </a>
-                </li>
-            </ul>
+            <div class="footer__wrapper">
+                <h2 class="footer__title">
+                    Связаться со мной можно любым удобным способом
+                </h2>
+                <ul class="contacts__list">
+                    <li class="contacts__item">
+                        <a class="contacts__link--mail" href="mailto:galievdesign@gmail.com">
+                            galievdesign@gmail.com
+                        </a>
+                    </li>
+                    <li>
+                        <a class="contacts__link--phone" href="tel:+79874038030">
+                            8 (987) 403-80-30
+                        </a>
+                    </li>
+                </ul>
+                <ul class="socials__list">
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://t.me/galievdesign"
+                            title="Чат в Телеграм">
+                            Telegram
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://www.instagram.com/galiev.design/"
+                            title="Аккаунт в Instagram">
+                            Instagram
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://vk.com/galievdesign"
+                            title="Аккаунт во ВКонтакте">
+                            ВКонтакте
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 
