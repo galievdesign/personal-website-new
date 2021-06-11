@@ -1,8 +1,10 @@
 .footer {
     background-color: $lightGreyColor;
-    height: 300px;
-    position: relative;
-    z-index: 2;
+    // position: relative;
+    // z-index: 2;
+    // position: sticky;
+    // top: 0;
+    // z-index: 1;
     height: 100vh;
 }
 
@@ -16,11 +18,11 @@
     font-family: $primaryFont;
     font-style: normal;
     font-weight: 400;
-    font-size: 3.5vw;
-    line-height: 1.1;
+    font-size: 4vw;
+    line-height: 1;
+    letter-spacing: -0.03em;
     // text-transform: uppercase;
     max-width: 50%;
-    margin-top: 80px;
 }
 
 .contacts__item:first-child {
@@ -32,7 +34,8 @@
     font-style: normal;
     font-weight: 400;
     font-size: 5.5vw;
-    line-height: 1.2;
+    line-height: 1;
+    letter-spacing: -0.03em;
 }
 
 .contacts__link--phone {
@@ -40,7 +43,8 @@
     font-style: normal;
     font-weight: 400;
     font-size: 3.5vw;
-    line-height: 1.2;
+    line-height: 1;
+    letter-spacing: -0.03em;
 }
 
 .socials__list {
