@@ -36,6 +36,11 @@ a {
   height: 100%;
 }
 
+.relative {
+  position: relative;
+  z-index: 2;
+}
+
 @media screen and (max-width: 999px) {
   .container {
     padding: 20px;
