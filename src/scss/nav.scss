@@ -1,34 +1,31 @@
 .nav__list {
     grid-area: nav;
-    grid-column-end: 2;
-}
-
-.nav__item {
-    display: inline-block;
-    margin-right: 30px;
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 45px;
 }
 
 .nav__link {
+    display: block;
+    color: black;
     font-family: $secondFont;
     font-weight: 400;
     font-size: 2vw;
     line-height: 1;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
 }
 
 @media screen and (max-width: 999px) {
-    .nav__item {
-        margin-right: 20px;
-    }
-
     .nav__link {
         font-size: 30px;
     }
 }
 
 @media screen and (max-width: 599px) {
-    .nav__item {
-        margin-right: 15px;
+    .nav__list {
+        gap: 20px;
     }
 
     .nav__link {

@@ -7,3 +7,4 @@ function setVh() {
     .querySelector(':root')
     .style.setProperty('--vh', window.innerHeight / 100 + 'px')
 }
+

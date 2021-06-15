@@ -4,14 +4,13 @@
 @import "hero";
 @import "nav";
 @import "projects";
+@import "decorate";
 @import "footer";
 
 * {
-  transition: 0.1s;
-  color: $textColor;
-  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 html {
@@ -19,30 +18,23 @@ html {
 }
 
 body {
-  background-color: $lightGreyColor;
   font-size: 16px;
 }
 
-a {
-  color: $accentColor;
-  
-    &:hover {
-      color: $hoverColor;
-  }
-}
-
 .container {
-  padding: 40px;
   height: 100%;
+  padding: 40px;
 }
 
-.relative {
-  position: relative;
-  z-index: 2;
+a {
+  &:hover {
+    color: orangered;
+    font-style: italic;
+  }
 }
 
 @media screen and (max-width: 999px) {
   .container {
-    padding: 20px;
+    padding: 20px 15px;
   }
 }
