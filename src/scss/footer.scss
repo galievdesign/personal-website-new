@@ -6,12 +6,17 @@
     height: auto;
     padding-top: 100px;
     background-color: black;
+    z-index: 5;
 }
 
 .footer__wrapper {
     display: grid;
     grid-template-rows: 1.5fr 1fr;
     row-gap: 80px;
+}
+
+.contacts__list {
+    z-index: 2;
 }
 
 .contacts__item:first-child {
@@ -43,6 +48,7 @@
     flex-direction: row;
     align-self: end;
     gap: 30px;
+    z-index: 2;
 }
 
 .socials__link {
@@ -54,23 +60,23 @@
     letter-spacing: -0.03em;
 }
 
-.socials__link--tg {
-    &:hover {
-        color: $tgColor;
-    } 
-}
+// .socials__link--tg {
+//     &:hover {
+//         color: $tgColor;
+//     } 
+// }
 
-.socials__link--ig {
-    &:hover {
-        color: $igColor;
-    } 
-}
+// .socials__link--ig {
+//     &:hover {
+//         color: $igColor;
+//     } 
+// }
 
-.socials__link--vk {
-    &:hover {
-        color: $vkColor;
-    } 
-}
+// .socials__link--vk {
+//     &:hover {
+//         color: $vkColor;
+//     } 
+// }
 
 
 @media screen and (max-width: 999px) {
