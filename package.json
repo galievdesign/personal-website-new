@@ -2,11 +2,11 @@
   "name": "sass-made-easy",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "default": "index.html",
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
-    "deploy": "parcel build src/index.html --out-dir docs --public-url ./"
+    "deploy": "parcel build src/index.html --dist-dir docs --public-url ./"
   },
   "keywords": [],
   "author": "",
